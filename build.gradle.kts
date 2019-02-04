@@ -14,6 +14,17 @@ dependencies {
     // Our beloved one-nio
     compile("ru.odnoklassniki:one-nio:1.0.2")
 
+    compile("org.mapdb:mapdb:3.0.5")
+
+    //SLF4J
+    compile("org.slf4j:slf4j-api:1.7.25");
+    //logback
+    compile("ch.qos.logback:logback-classic:1.2.3")
+    compile("ch.qos.logback:logback-core:1.2.3")
+
+    // Json
+    compile("org.json", "json", "20090211")
+
     // Annotations for better code documentation
     compile("com.intellij:annotations:12.0")
 

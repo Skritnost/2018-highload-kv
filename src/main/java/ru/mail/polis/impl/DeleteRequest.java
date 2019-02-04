@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Future;
 
-public class DeleteHandler extends RequestHandler {
+public class DeleteRequest extends RequestHandler {
 
-    public DeleteHandler(@NotNull String methodName, @NotNull KVDao dao, @NotNull RF rf, String id, Long bytes) {
+    public DeleteRequest(@NotNull String methodName, @NotNull KVDao dao, @NotNull RF rf, String id, Long bytes) {
         super(methodName, dao, rf, id, bytes,null);
     }
 

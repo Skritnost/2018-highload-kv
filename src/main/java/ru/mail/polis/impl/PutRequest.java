@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Future;
 
-public class PutHandler extends RequestHandler {
-    public PutHandler(@NotNull String methodName, @NotNull KVDao dao, @NotNull RF rf, String id, Long bytes, byte[] value) {
+public class PutRequest extends RequestHandler {
+    public PutRequest(@NotNull String methodName, @NotNull KVDao dao, @NotNull RF rf, String id, Long bytes, byte[] value) {
         super(methodName, dao, rf, id, bytes, value);
     }
 

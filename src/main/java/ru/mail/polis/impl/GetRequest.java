@@ -14,12 +14,12 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Future;
 
-public class GetHandler extends RequestHandler {
+public class GetRequest extends RequestHandler {
     private List<Value> values = new ArrayList<>();
     private boolean partial;
     private long allSize;
 
-    public GetHandler(@NotNull String methodName, @NotNull KVDao dao, @NotNull RF rf, String id, Long bytes, boolean partial, long allSize) {
+    public GetRequest(@NotNull String methodName, @NotNull KVDao dao, @NotNull RF rf, String id, Long bytes, boolean partial, long allSize) {
         super(methodName, dao, rf, id, bytes, null);
         this.partial = partial;
         this.allSize = allSize;
