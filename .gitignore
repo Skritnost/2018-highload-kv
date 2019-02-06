@@ -1,9 +1,11 @@
 # Ignore everything
 *
-/src/main/java/ru/mail/polis/impl/AmmoGenerator.java
+
 # But not Java files...
 !.gitignore
 !*.java
+!*.svg
+!LOADTEST.md
 
 # ...even if they are in subdirectories
 !*/
